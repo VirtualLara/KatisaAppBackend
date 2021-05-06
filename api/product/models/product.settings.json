@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "clave": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "watts": {
+      "type": "string",
+      "required": false
+    },
+    "lumen": {
+      "type": "string"
+    },
+    "temperatura": {
+      "type": "string"
+    },
+    "voltminimo": {
+      "type": "string"
+    },
+    "volmaximo": {
+      "type": "string"
+    },
+    "medida": {
+      "type": "string"
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "tags": {
+      "type": "string"
+    }
+  }
+}
