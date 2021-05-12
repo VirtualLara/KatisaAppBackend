@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sucursals",
+  "info": {
+    "name": "store",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "namesuc": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "celularsuc": {
+      "type": "biginteger",
+      "required": true
+    },
+    "correosuc": {
+      "type": "string",
+      "required": true
+    },
+    "telefonosuc": {
+      "type": "biginteger"
+    },
+    "fotosuc": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "city": {
+      "model": "ciudad",
+      "via": "stores"
+    },
+    "callesuc": {
+      "type": "string",
+      "required": true
+    },
+    "colsuc": {
+      "type": "string",
+      "required": true
+    },
+    "cpsuc": {
+      "type": "biginteger",
+      "required": true,
+      "max": "99999"
+    },
+    "horainisuc": {
+      "type": "integer",
+      "required": true
+    },
+    "horafinsuc": {
+      "type": "integer",
+      "required": true
+    },
+    "hracierresuc": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

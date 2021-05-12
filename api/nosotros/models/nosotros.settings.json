@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nosotros",
+  "info": {
+    "name": "nosotros",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "parrafo1": {
+      "type": "text",
+      "required": true
+    },
+    "parrafo2": {
+      "type": "text"
+    },
+    "parrafo3": {
+      "type": "text"
+    },
+    "parrafo4": {
+      "type": "text"
+    },
+    "parrafo5": {
+      "type": "text"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

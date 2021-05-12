@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ciudads",
+  "info": {
+    "name": "city",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreciudad": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "stores": {
+      "via": "city",
+      "collection": "sucursal"
+    }
+  }
+}

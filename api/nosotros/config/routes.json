@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/nosotros",
+      "handler": "nosotros.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nosotros/count",
+      "handler": "nosotros.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nosotros/:id",
+      "handler": "nosotros.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/nosotros",
+      "handler": "nosotros.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/nosotros/:id",
+      "handler": "nosotros.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/nosotros/:id",
+      "handler": "nosotros.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
