@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rifaperiodos",
+  "info": {
+    "name": "rifaperiodo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "emprifa": {
+      "type": "date"
+    },
+    "terrifa": {
+      "type": "date"
+    }
+  }
+}

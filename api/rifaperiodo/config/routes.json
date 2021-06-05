@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rifaperiodos",
+      "handler": "rifaperiodo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rifaperiodos/count",
+      "handler": "rifaperiodo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rifaperiodos/:id",
+      "handler": "rifaperiodo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rifaperiodos",
+      "handler": "rifaperiodo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rifaperiodos/:id",
+      "handler": "rifaperiodo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rifaperiodos/:id",
+      "handler": "rifaperiodo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
