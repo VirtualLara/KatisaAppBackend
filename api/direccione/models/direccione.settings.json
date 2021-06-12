@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "direcciones",
+  "info": {
+    "name": "direccione",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "nombreapellido": {
+      "type": "string",
+      "required": true
+    },
+    "callenumero": {
+      "type": "string",
+      "required": true
+    },
+    "colonia": {
+      "type": "string",
+      "required": true
+    },
+    "ciudad": {
+      "type": "string",
+      "required": true
+    },
+    "localidadmunicipio": {
+      "type": "string",
+      "required": false
+    },
+    "estado": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "integer",
+      "required": false
+    },
+    "codigopostal": {
+      "type": "integer",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "referenciasdomicilio": {
+      "type": "text",
+      "required": false
+    },
+    "celular": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
