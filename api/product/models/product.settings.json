@@ -45,7 +45,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "tags": {
       "type": "string"
@@ -53,6 +54,14 @@
     "activo": {
       "type": "boolean",
       "default": true
+    },
+    "pagar": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "precio": {
+      "type": "decimal"
     }
   }
 }
