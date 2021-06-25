@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/orders",
-      "handler": "order.find",
+      "path": "/ventas",
+      "handler": "venta.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/orders/count",
-      "handler": "order.count",
+      "path": "/ventas/count",
+      "handler": "venta.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/orders/:id",
-      "handler": "order.findOne",
+      "path": "/ventas/:id",
+      "handler": "venta.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/orders",
-      "handler": "order.create",
+      "path": "/ventas",
+      "handler": "venta.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/orders/:id",
-      "handler": "order.update",
+      "path": "/ventas/:id",
+      "handler": "venta.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/orders/:id",
-      "handler": "order.delete",
+      "path": "/ventas/:id",
+      "handler": "venta.delete",
       "config": {
         "policies": []
       }

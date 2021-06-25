@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "orders",
+  "collectionName": "ventas",
   "info": {
-    "name": "order"
+    "name": "venta"
   },
   "options": {
     "increments": true,
@@ -10,11 +10,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "totalpago": {
+    "pagototal": {
       "type": "decimal",
       "required": true
     },
-    "users": {
+    "user": {
       "plugin": "users-permissions",
       "model": "user"
     },
@@ -29,7 +29,7 @@
     "product": {
       "model": "product"
     },
-    "productprecio": {
+    "totalproducto": {
       "type": "decimal",
       "required": true
     },
