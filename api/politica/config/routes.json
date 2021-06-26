@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/politicas",
+      "handler": "politica.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/politicas/count",
+      "handler": "politica.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/politicas/:id",
+      "handler": "politica.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/politicas",
+      "handler": "politica.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/politicas/:id",
+      "handler": "politica.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/politicas/:id",
+      "handler": "politica.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

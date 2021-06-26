@@ -16,11 +16,28 @@ module.exports = {
             totalPagar += product.precio * product.quantity;
         });
 
+        let datos = [];
+        products.forEach(product => {
+            datos.push(
+                ` Compra: ${product.quantity} - ${product.clave} `
+            )
+        });
+
+        let envio = `Recibe: ${direccionenvio.nombreapellido}, 
+        Enviar a: ${direccionenvio.callenumero}, 
+        ${direccionenvio.colonia}, ${direccionenvio.codigopostal},
+        ${direccionenvio.ciudad}, ${direccionenvio.localidadmunicipio},
+        ${direccionenvio.estado}, ${direccionenvio.telefono}, ${direccionenvio.celular}, 
+        ${direccionenvio.referenciasdomicilio}`
+
         const charge = await stripe.charges.create({
             amount: totalPagar * 100,
             currency: 'mxn',
             source: tokenStripe,
-            description: `ID Usuario: ${idUser}`
+            //description: `ID Usuario: ${idUser} mas: ${datos}`
+            description: `${datos} ${'\n'}` +
+                '\n' +
+                `${envio}`
         })
 
         const createVenta = [];

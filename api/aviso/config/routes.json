@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/avisos",
+      "handler": "aviso.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avisos/count",
+      "handler": "aviso.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avisos/:id",
+      "handler": "aviso.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/avisos",
+      "handler": "aviso.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/avisos/:id",
+      "handler": "aviso.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/avisos/:id",
+      "handler": "aviso.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
