@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aaaempresaredes",
+  "info": {
+    "name": "aaaempresaredes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "logonombre": {
+      "type": "string"
+    },
+    "colorcontenedor": {
+      "type": "string"
+    },
+    "colortexto": {
+      "type": "string"
+    },
+    "colorlogo": {
+      "type": "string"
+    },
+    "redsocialnombre": {
+      "type": "string"
+    }
+  }
+}

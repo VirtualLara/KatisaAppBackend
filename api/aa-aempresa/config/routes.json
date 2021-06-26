@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aa-aempresas",
+      "handler": "aa-aempresa.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aa-aempresas/count",
+      "handler": "aa-aempresa.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aa-aempresas/:id",
+      "handler": "aa-aempresa.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aa-aempresas",
+      "handler": "aa-aempresa.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aa-aempresas/:id",
+      "handler": "aa-aempresa.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aa-aempresas/:id",
+      "handler": "aa-aempresa.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

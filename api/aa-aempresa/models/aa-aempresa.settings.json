@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "aa_aempresas",
   "info": {
-    "name": "product",
+    "name": "AAAempresa",
     "description": ""
   },
   "options": {
@@ -11,66 +11,57 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "clave": {
+    "nombre": {
       "type": "string"
     },
-    "descripcion": {
+    "calle": {
       "type": "string"
     },
-    "watts": {
-      "type": "string",
-      "required": false
-    },
-    "lumen": {
+    "colonia": {
       "type": "string"
     },
-    "temperatura": {
+    "codigopostal": {
+      "type": "integer"
+    },
+    "ciudad": {
       "type": "string"
     },
-    "voltminimo": {
+    "localidad": {
       "type": "string"
     },
-    "volmaximo": {
+    "estado": {
       "type": "string"
     },
-    "medida": {
+    "telefono": {
+      "type": "integer"
+    },
+    "celular": {
+      "type": "integer"
+    },
+    "correo": {
       "type": "string"
     },
-    "foto": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "tags": {
+    "rfc": {
       "type": "string"
     },
-    "activo": {
-      "type": "boolean",
-      "default": true
-    },
-    "pagar": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "precio": {
-      "type": "decimal"
-    },
-    "logo": {
+    "logoprincipal": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
+      "pluginOptions": {}
+    },
+    "logoredondo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
       "pluginOptions": {}
     }
   }
